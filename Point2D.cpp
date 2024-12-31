@@ -22,7 +22,7 @@ bool operator!=(const Point2D &a, const Point2D &b){
 std::ostream& operator<<(std::ostream &out, const Point2D &p){
 
 
-	out<<"x="<<p.x<<"y="<<p.y;
+	out<<"x="<<p.x<<"  y="<<p.y;
 	return out;
 
 }

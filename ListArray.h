@@ -114,7 +114,7 @@ class ListArray : public List<T> {
 		}
 		int search(T e) override{
 			int pos =  -1;
-			for(int i=0;i<max;i++){
+			for(int i=0;i<size();i++){
 				if(arr[i]==e){
 					
 					pos = i;

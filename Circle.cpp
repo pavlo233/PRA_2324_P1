@@ -32,7 +32,7 @@ void Circle::set_radius(double r){
 }
 std::ostream& operator<<(std::ostream &out, const Circle &c){
 
-    out<<"color: "<<c.get_color()<<std::endl<<"center: "<<c.get_center()<<std::endl<<"radius: "<<c.get_radius()<<std::endl;
+    out<<"Shape:Circle=  "<<"color: "<<c.get_color()<<"  center: "<<c.get_center()<<"  radius: "<<c.get_radius()<<std::endl;
     return out;
 
 
@@ -40,7 +40,6 @@ std::ostream& operator<<(std::ostream &out, const Circle &c){
 double Circle::area() const{
     
    return pi*pow(get_radius(),2);
-
 }
 double Circle::perimeter() const{
 

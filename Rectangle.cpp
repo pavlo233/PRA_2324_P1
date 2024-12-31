@@ -75,7 +75,7 @@ Rectangle& Rectangle::operator=(const Rectangle &r){
 
 std::ostream& operator<<(std::ostream &out, const Rectangle &r){
 
-    out<<"color: "<<r.get_color()<<"  v0: "<<r[0]<<"  v1: "<<r[1]<<"  v2: "<<r[2]<<"  v3; "<<r[3]<<std::endl;
+    out<<"Shape:Rectangle=  "<<"color: "<<r.get_color()<<"  Vertices=  v0: "<<r[0]<<"  v1: "<<r[1]<<"  v2: "<<r[2]<<"  v3; "<<r[3]<<std::endl;
     return out;
 
 

@@ -13,8 +13,8 @@ class ListLinked : public List<T> {
     public:
         ListLinked(){
 	
-	this->first = nullptr;
-        this->n = 0;
+	    this->first = nullptr;
+            this->n = 0;
 	
 	}
 	~ListLinked(){
