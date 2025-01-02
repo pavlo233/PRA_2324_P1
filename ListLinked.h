@@ -31,9 +31,9 @@ class ListLinked : public List<T> {
 	    }
 	}
         T operator[](int pos){
-	    if(pos < 0 || pos > size()-1){
+	    if(pos < 0 || pos >= size()){
 	    
-	        throw std::out_of_range("posicion invalida");
+	        throw std::out_of_range("posicion invalida p");
 	    
 	    }
 	    else{
@@ -102,7 +102,7 @@ class ListLinked : public List<T> {
 	}
 	T remove(int pos) override{
 	    if(pos < 0 || pos >= size() ){
-	        throw std::out_of_range("posicion invalida");
+	        throw std::out_of_range("posicion invalida r");
 	    
 	    }
 	    else if(pos == 0){
